@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Casper Homes | Luxury Real Estate</title>
+  <meta name="description" content="Luxury real estate website for premium property listings, private viewings and home valuations." />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <h1>Casper</h1>
+      <p>Homes</p>
+      <span></span>
+      <small>Luxury Real Estate</small>
+      <div class="loading-line"><i></i></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#home" class="brand">
+      <span>Casper</span>
+      <small>Homes</small>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#experience">Experience</a>
+      <a href="#locations">Locations</a>
+      <a href="#valuation">Valuation</a>
+      <a href="#contact" class="nav-cta">Book Viewing <span>→</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-section" id="home">
+      <div class="hero-bg">
+        <img src="images/hero-property.jpg" alt="Luxury modern home">
+      </div>
+
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Luxury Real Estate</p>
+
+          <h1>
+            Extraordinary homes.<br>
+            Exceptional <em>living.</em>
+          </h1>
+
+          <p class="hero-text">
+            Curated luxury properties, trusted local expertise and a seamless experience from search to completion.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#properties" class="btn gold">Explore Properties <span>→</span></a>
+            <a href="#contact" class="btn outline">Book Private Viewing</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Private Viewings</span>
+            <span>Verified Listings</span>
+            <span>Local Experts</span>
+          </div>
+        </div>
+
+        <aside class="hero-feature reveal">
+          <p class="feature-label">Featured Residence</p>
+          <h2>Prestige Villa</h2>
+          <span>Modern luxury with private outdoor living</span>
+
+          <div class="feature-lines">
+            <div>
+              <strong>5</strong>
+              <small>Bedrooms</small>
+            </div>
+            <div>
+              <strong>6</strong>
+              <small>Bathrooms</small>
+            </div>
+            <div>
+              <strong>7,250</strong>
+              <small>Sq. Ft.</small>
+            </div>
+          </div>
+
+          <div class="feature-next">
+            <small>Next private viewing</small>
+            <strong>Today · 4:30 PM</strong>
+          </div>
+
+          <div class="feature-thumbs">
+            <img src="images/property-1.jpg" alt="Property preview">
+            <img src="images/property-2.jpg" alt="Interior preview">
+          </div>
+
+          <a href="#contact">Request Viewing <span>→</span></a>
+        </aside>
+      </div>
+
+      <form class="search-panel reveal" id="searchForm">
+        <div class="search-title">
+          <span>Search</span>
+          <strong>Find your perfect home</strong>
+        </div>
+
+        <label>
+          <span>Location</span>
+          <select>
+            <option>Any Location</option>
+            <option>London</option>
+            <option>Birmingham</option>
+            <option>Manchester</option>
+            <option>Leeds</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Buy / Rent</span>
+          <select>
+            <option>Buying</option>
+            <option>Renting</option>
+            <option>Investment</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Property Type</span>
+          <select>
+            <option>Any Type</option>
+            <option>Luxury Villa</option>
+            <option>Detached House</option>
+            <option>Apartment</option>
+            <option>Family Home</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Budget</span>
+          <select>
+            <option>Any Budget</option>
+            <option>£300k+</option>
+            <option>£500k+</option>
+            <option>£750k+</option>
+            <option>£1M+</option>
+          </select>
+        </label>
+
+        <button type="submit">Search Homes <span>→</span></button>
+
+        <p class="search-status" id="searchStatus"></p>
+      </form>
+    </section>
+
+    <section class="trust-strip">
+      <div class="reveal">
+        <strong data-count="120">0</strong>
+        <span>£M+ property value marketed</span>
+      </div>
+
+      <div class="reveal">
+        <strong data-count="850">0</strong>
+        <span>Client enquiries generated</span>
+      </div>
+
+      <div class="reveal">
+        <strong>4.9★</strong>
+        <span>Average client rating</span>
+      </div>
+
+      <div class="reveal">
+        <strong data-count="21">0</strong>
+        <span>Days average sale time</span>
+      </div>
+    </section>
+
+    <section class="spotlight page-section" id="properties">
+      <div class="spotlight-image reveal">
+        <img src="images/property-1.jpg" alt="Willow Park Residence">
+      </div>
+
+      <div class="spotlight-copy reveal">
+        <p class="eyebrow">Featured Residence</p>
+        <h2>Willow Park Residence</h2>
+        <p>
+          A contemporary detached home with open-plan interiors, private garden space and premium finishes in a calm residential setting.
+        </p>
+
+        <div class="spotlight-facts">
+          <div>
+            <strong>4</strong>
+            <span>Bedrooms</span>
+          </div>
+
+          <div>
+            <strong>3</strong>
+            <span>Bathrooms</span>
+          </div>
+
+          <div>
+            <strong>2,150</strong>
+            <span>Sq. Ft.</span>
+          </div>
+        </div>
+
+        <div class="price-row">
+          <span>Guide Price</span>
+          <strong>£475,000</strong>
+        </div>
+
+        <button class="btn black modal-btn" type="button" data-property="willow">View Property Details</button>
+      </div>
+    </section>
+
+    <section class="section listings">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Curated Residences</p>
+          <h2>Exquisite homes in exceptional locations.</h2>
+          <p>
+            Handpicked properties with strong presentation, clear details and a private viewing experience.
+          </p>
+        </div>
+
+        <a href="#contact">Arrange a viewing <span>→</span></a>
+      </div>
+
+      <div class="editorial-grid">
+        <article class="listing-card large reveal">
+          <button class="save-btn" type="button">♡ Save</button>
+          <button class="modal-btn card-click" type="button" data-property="willow">View Details</button>
+          <div class="tag">New Listing</div>
+          <img src="images/property-1.jpg" alt="Modern luxury property">
+          <div class="listing-info">
+            <p>Detached Residence</p>
+            <h3>Willow Park House</h3>
+            <div>
+              <span>4 Beds</span>
+              <span>3 Baths</span>
+              <strong>£475,000</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="listing-card reveal">
+          <button class="save-btn" type="button">♡ Save</button>
+          <button class="modal-btn card-click" type="button" data-property="skyline">View Details</button>
+          <div class="tag">Featured</div>
+          <img src="images/property-2.jpg" alt="Luxury apartment">
+          <div class="listing-info">
+            <p>Luxury Apartment</p>
+            <h3>Skyline Quarter</h3>
+            <div>
+              <span>2 Beds</span>
+              <strong>£325,000</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="listing-card reveal">
+          <button class="save-btn" type="button">♡ Save</button>
+          <button class="modal-btn card-click" type="button" data-property="oakbridge">View Details</button>
+          <div class="tag">Private View</div>
+          <img src="images/property-3.jpg" alt="Modern family property">
+          <div class="listing-info">
+            <p>Family Home</p>
+            <h3>Oakbridge House</h3>
+            <div>
+              <span>5 Beds</span>
+              <strong>£695,000</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tour-section">
+      <div class="tour-card reveal">
+        <img src="images/property-2.jpg" alt="Property tour preview">
+
+        <div class="tour-overlay">
+          <button type="button">▶</button>
+          <p>Watch Property Tour</p>
+          <span>90 second walkthrough</span>
+        </div>
+      </div>
+
+      <div class="tour-copy reveal">
+        <p class="eyebrow">Property Tour</p>
+        <h2>Show the lifestyle, not just the listing.</h2>
+        <p>
+          Premium visuals help buyers understand the feel of a home before they book a private viewing.
+        </p>
+      </div>
+    </section>
+
+    <section class="experience-section page-section" id="experience">
+      <div class="experience-head reveal">
+        <p class="eyebrow">The Casper Experience</p>
+        <h2>A smoother way to move.</h2>
+      </div>
+
+      <div class="experience-grid">
+        <article class="reveal">
+          <span>01</span>
+          <h3>Private Consultation</h3>
+          <p>We understand your property goals, lifestyle and ideal location before the search begins.</p>
+        </article>
+
+        <article class="reveal">
+          <span>02</span>
+          <h3>Curated Search</h3>
+          <p>Suitable properties are shortlisted with clear details, strong visuals and viewing options.</p>
+        </article>
+
+        <article class="reveal">
+          <span>03</span>
+          <h3>Expert Guidance</h3>
+          <p>Our advisors support you through decisions, offers and next steps with confidence.</p>
+        </article>
+
+        <article class="reveal">
+          <span>04</span>
+          <h3>Smooth Completion</h3>
+          <p>A clear process from first enquiry to private viewing, valuation, sale or move-in day.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="locations-section page-section" id="locations">
+      <div class="locations-copy reveal">
+        <p class="eyebrow">Prime Locations</p>
+        <h2>Explore areas with strong buyer demand.</h2>
+        <p>
+          From city apartments to family homes, Casper Homes helps clients discover locations with long-term lifestyle and investment value.
+        </p>
+      </div>
+
+      <div class="location-board reveal">
+        <div class="location-tabs">
+          <button class="location-btn active" data-location="London">London</button>
+          <button class="location-btn" data-location="Birmingham">Birmingham</button>
+          <button class="location-btn" data-location="Manchester">Manchester</button>
+          <button class="location-btn" data-location="Leeds">Leeds</button>
+        </div>
+
+        <div class="location-map">
+          <div class="map-dot dot-one"></div>
+          <div class="map-dot dot-two"></div>
+          <div class="map-dot dot-three"></div>
+
+          <div class="location-panel">
+            <span id="locationName">London</span>
+            <h3 id="locationTitle">Prime Central Demand</h3>
+            <p id="locationText">Luxury apartments and modern family homes remain popular with buyers seeking strong transport links and premium amenities.</p>
+
+            <div>
+              <strong id="locationPrice">£740k</strong>
+              <small>Average home value</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="valuation-section page-section" id="valuation">
+      <div class="valuation-card reveal">
+        <div>
+          <p class="eyebrow">Free Property Valuation</p>
+          <h2>Find out what your home could be worth.</h2>
+          <p>
+            Request a free property valuation and receive expert guidance from a local advisor.
+          </p>
+        </div>
+
+        <form class="valuation-form">
+          <input type="text" placeholder="Property postcode">
+          <input type="text" placeholder="Property type">
+          <input type="email" placeholder="Email address">
+          <button type="button">Request Valuation</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Client Stories</p>
+          <h2>Trust built through better service.</h2>
+        </div>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="reveal">
+          <p>“Casper Homes made our sale feel calm, organised and professional from the first valuation.”</p>
+          <strong>Sarah M.</strong>
+          <span>Home Seller</span>
+        </article>
+
+        <article class="reveal">
+          <p>“Within days of launching our listing, we had serious enquiries and a private viewing booked.”</p>
+          <strong>Daniel R.</strong>
+          <span>Property Owner</span>
+        </article>
+
+        <article class="reveal">
+          <p>“The presentation made the property feel premium before buyers even stepped inside.”</p>
+          <strong>Aisha K.</strong>
+          <span>Investor</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section page-section" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">Book a Viewing</p>
+          <h2>Ready to move with confidence?</h2>
+          <p>
+            Book a private viewing, request a valuation or speak with a local property advisor today.
+          </p>
+
+          <div class="contact-buttons">
+            <a href="#contact">Book Viewing</a>
+            <a href="#valuation">Request Valuation</a>
+            <a href="#contact">Speak to Advisor</a>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email address">
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Phone number">
+            <select>
+              <option>Buying a property</option>
+              <option>Selling a property</option>
+              <option>Book a viewing</option>
+              <option>Request valuation</option>
+            </select>
+          </div>
+
+          <textarea placeholder="Tell us what you are looking for..."></textarea>
+
+          <button type="button">Send Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a href="#contact" class="floating-cta">Book Viewing</a>
+
+  <div class="studio-badge">
+    <span>Demo Website</span>
+    <strong>Built by HS Digital Studio</strong>
+  </div>
+
+  <div class="property-modal" id="propertyModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" type="button">×</button>
+
+      <div class="modal-image">
+        <img id="modalImage" src="images/property-1.jpg" alt="Property preview">
+      </div>
+
+      <div class="modal-info">
+        <p class="eyebrow">Property Details</p>
+        <h2 id="modalTitle">Willow Park House</h2>
+        <p id="modalDesc">
+          A contemporary detached home with open-plan interiors, private garden space and premium finishes.
+        </p>
+
+        <div class="modal-facts">
+          <span id="modalBeds">4 Beds</span>
+          <span id="modalBaths">3 Baths</span>
+          <span id="modalSize">2,150 sqft</span>
+        </div>
+
+        <strong id="modalPrice">£475,000</strong>
+
+        <a href="#contact" id="modalCTA">Book Viewing</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <strong>Casper Homes</strong>
+      <p>Luxury property agency website concept by HS Digital Studio.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <a href="#properties">Properties</a>
+      <a href="#experience">Experience</a>
+      <a href="#locations">Locations</a>
+      <a href="#valuation">Valuation</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:hello@casperhomes.co.uk">hello@casperhomes.co.uk</a>
+      <span>London · Birmingham · Manchester</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
