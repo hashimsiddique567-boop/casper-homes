@@ -1059,7 +1059,7 @@ textarea {
   border-radius: 36px;
   background:
     linear-gradient(rgba(17,17,17,0.18), rgba(17,17,17,0.52)),
-    url("images/hero-property.jpg");
+    url("hero-property.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1157,7 +1157,7 @@ textarea {
   border-radius: 36px;
   background:
     linear-gradient(rgba(17,17,17,0.68), rgba(17,17,17,0.68)),
-    url("images/property-3.jpg");
+    url("property-3.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: var(--shadow);
@@ -1251,7 +1251,7 @@ textarea {
   border-radius: 36px;
   background:
     linear-gradient(rgba(17,17,17,0.76), rgba(17,17,17,0.76)),
-    url("images/hero-property.jpg");
+    url("hero-property.jpg");
   background-size: cover;
   background-position: center;
   color: white;

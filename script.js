@@ -214,7 +214,7 @@ locationButtons.forEach((button) => {
 const properties = {
   willow: {
     title: "Willow Park House",
-    image: "images/property-1.jpg",
+    image: "property-1.jpg",
     desc: "A contemporary detached home with open-plan interiors, private garden space and premium finishes.",
     beds: "4 Beds",
     baths: "3 Baths",
@@ -223,7 +223,7 @@ const properties = {
   },
   skyline: {
     title: "Skyline Quarter",
-    image: "images/property-2.jpg",
+    image: "property-2.jpg",
     desc: "A refined luxury apartment with modern interiors, city views and excellent access to local amenities.",
     beds: "2 Beds",
     baths: "2 Baths",
@@ -232,7 +232,7 @@ const properties = {
   },
   oakbridge: {
     title: "Oakbridge House",
-    image: "images/property-3.jpg",
+    image: "property-3.jpg",
     desc: "A spacious family home with elegant living areas, premium finishes and a calm residential setting.",
     beds: "5 Beds",
     baths: "4 Baths",
