@@ -16,11 +16,15 @@ window.addEventListener("load", () => {
 if (menuBtn && nav) {
   menuBtn.addEventListener("click", () => {
     nav.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
   });
 
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("active");
+      menuBtn.classList.remove("active");
+      document.body.classList.remove("menu-open");
     });
   });
 }
@@ -277,6 +281,16 @@ function closeModal() {
   modal.classList.remove("active");
   modal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
+
+  if (nav) {
+    nav.classList.remove("active");
+  }
+
+  if (menuBtn) {
+    menuBtn.classList.remove("active");
+  }
+
+  document.body.classList.remove("menu-open");
 }
 
 document.querySelectorAll(".modal-btn").forEach((button) => {
@@ -300,5 +314,15 @@ if (modalCTA) {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
+
+    if (nav) {
+      nav.classList.remove("active");
+    }
+
+    if (menuBtn) {
+      menuBtn.classList.remove("active");
+    }
+
+    document.body.classList.remove("menu-open");
   }
 });
