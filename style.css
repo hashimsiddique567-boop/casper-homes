@@ -2090,4 +2090,111 @@ textarea {
     font-size: 1rem;
     box-shadow: 0 20px 55px rgba(0,0,0,0.32);
   }
+}/* FINAL MOBILE HERO IMAGE FIX */
+@media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    padding: 96px 16px 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: visible;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    z-index: -4;
+  }
+
+  .hero-bg img {
+    height: 100%;
+    min-height: 720px;
+    object-fit: cover;
+    object-position: center top;
+    animation: none;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(8,9,10,0.18) 0%, rgba(8,9,10,0.32) 34%, rgba(8,9,10,0.82) 100%),
+      linear-gradient(90deg, rgba(8,9,10,0.36), rgba(8,9,10,0.12));
+  }
+
+  .hero-grain {
+    opacity: 0.12;
+  }
+
+  .hero-inner {
+    min-height: 560px;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 210px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: none;
+    padding: 24px 20px 22px;
+    border-radius: 28px;
+    background: rgba(17,17,17,0.48);
+    border: 1px solid rgba(255,255,255,0.16);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 24px 70px rgba(0,0,0,0.28);
+  }
+
+  .eyebrow {
+    margin-bottom: 14px;
+    font-size: 0.7rem;
+    letter-spacing: 0.24em;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.65rem, 12vw, 4rem);
+    line-height: 0.94;
+    letter-spacing: -0.055em;
+  }
+
+  .hero h1::after {
+    width: 74px;
+    margin-top: 18px;
+  }
+
+  .hero-text {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.82);
+  }
+
+  .hero-actions {
+    margin-top: 20px;
+    gap: 11px;
+  }
+
+  .hero-actions .btn {
+    min-height: 54px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-points {
+    margin-top: 16px;
+    gap: 7px;
+  }
+
+  .hero-points span {
+    font-size: 0.68rem;
+    padding: 7px 9px;
+  }
+
+  .search-panel {
+    margin: 24px auto 0;
+  }
+
+  .floating-cta {
+    display: none;
+  }
 }
